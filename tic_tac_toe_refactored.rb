@@ -13,7 +13,7 @@ class Board
   end
 
   def print_board
-    puts @board.inspect
+    print @board
     top_row = @board[0][0..2]
     middle_row = @board[1][0..2]
     bottom_row = @board[2][0..2]
@@ -25,7 +25,6 @@ class Board
   end
   
   def make_mark(input)
-    puts input.inspect
     row = input[0].to_i
     column = input[1].to_i
     if row > 3 || column > 3
